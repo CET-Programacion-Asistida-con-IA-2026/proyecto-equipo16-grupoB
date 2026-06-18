@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SexEdu Connect — Información clara y confiable</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Fraunces:ital,wght@0,300;0,600;1,300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@2.44.0/tabler-icons.min.css">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+  <div class="header-inner">
+    <div class="logo">
+      <div class="logo-icon"><i class="ti ti-heart-plus" style="color:#fff"></i></div>
+      <div>
+        <h1>SexEdu Connect!!!</h1>
+        <span>Información clara, confiable y accesible</span>
+      </div>
+    </div>
+    <div class="header-badge"><i class="ti ti-shield-check"></i> Información médicamente verificada</div>
+  </div>
+</header>
+
+<div class="tabs-container">
+  <div class="tabs">
+    <button class="tab-btn active" onclick="showTab('anticonceptivos',this)"><i class="ti ti-pill"></i> Anticonceptivos</button>
+    <button class="tab-btn" onclick="showTab('ets',this)"><i class="ti ti-virus"></i> ETS / ITS</button>
+    <button class="tab-btn" onclick="showTab('mitos',this)"><i class="ti ti-bulb"></i> Mitos y Realidades</button>
+    <button class="tab-btn" onclick="showTab('quiz',this)"><i class="ti ti-school"></i> Quiz</button>
+    <button class="tab-btn" onclick="showTab('centros',this)"><i class="ti ti-map-pin"></i> Centros de Salud</button>
+    <button class="tab-btn" onclick="showTab('estadisticas',this)"><i class="ti ti-chart-bar"></i> Estadísticas</button>
+    <button class="tab-btn" onclick="showTab('recursos',this)"><i class="ti ti-download"></i> Recursos</button>
+    <button class="tab-btn" onclick="showTab('faq',this)"><i class="ti ti-message-question"></i> FAQ</button>
+  </div>
+</div>
+
+<main class="content">
+
+<!-- ====== ANTICONCEPTIVOS ====== -->
+<section id="tab-anticonceptivos" class="tab-panel active">
+  <h2 class="section-title">Métodos anticonceptivos</h2>
+  <p class="section-sub">Conocé las opciones disponibles para prevenir embarazos no planificados. Consultá con un profesional de salud antes de elegir.</p>
+  <div class="alert alert-teal"><i class="ti ti-info-circle"></i><span>Ningún método —excepto la abstinencia— es 100% efectivo. El preservativo es el único que también protege contra ITS.</span></div>
+  <div class="card-grid" style="grid-template-columns:repeat(auto-fit,minmax(300px,1fr))">
+
+    <div class="method-card">
+      <div class="method-header">
+        <div class="method-icon" style="background:#F8EAF6"><i class="ti ti-shield" style="color:#8E24AA;font-size:24px"></i></div>
+        <div><h3 style="margin:0">Preservativo (condón)</h3><span class="badge badge-teal">Barrera</span></div>
+      </div>
+      <div class="method-body">
+        <div class="eff-label"><span>Efectividad con uso correcto</span><span style="font-weight:600;color:#E91E8C">98%</span></div>
+        <div class="efectividad-bar"><div class="efectividad-fill" style="width:98%"></div></div>
+        <ul style="margin-top:0.75rem">
+          <li>Protege contra ITS y embarazo</li>
+          <li>Disponible sin receta médica</li>
+          <li>Masculino y femenino</li>
+          <li>Sin hormonas ni efectos secundarios sistémicos</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="method-card">
+      <div class="method-header">
+        <div class="method-icon" style="background:#FCE4EC"><i class="ti ti-pill" style="color:#F06292;font-size:24px"></i></div>
+        <div><h3 style="margin:0">Pastillas anticonceptivas</h3><span class="badge badge-purple">Hormonal</span></div>
+      </div>
+      <div class="method-body">
+        <div class="eff-label"><span>Efectividad con uso correcto</span><span style="font-weight:600;color:#E91E8C">99%</span></div>
+        <div class="efectividad-bar"><div class="efectividad-fill" style="width:99%"></div></div>
+        <ul style="margin-top:0.75rem">
+          <li>Requiere tomar una pastilla diaria</li>
+          <li>Puede regular el ciclo menstrual</li>
+          <li>Necesita receta médica</li>
+          <li>No protege contra ITS</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="method-card">
+      <div class="method-header">
+        <div class="method-icon" style="background:#FCE4EC"><i class="ti ti-activity" style="color:#F06292;font-size:24px"></i></div>
+        <div><h3 style="margin:0">DIU / Dispositivo intrauterino</h3><span class="badge badge-blue">Larga duración</span></div>
+      </div>
+      <div class="method-body">
+        <div class="eff-label"><span>Efectividad</span><span style="font-weight:600;color:#E91E8C">99.9%</span></div>
+        <div class="efectividad-bar"><div class="efectividad-fill" style="width:99.9%"></div></div>
+        <ul style="margin-top:0.75rem">
+          <li>Dura de 3 a 10 años según el tipo</li>
+          <li>Hormonal (Mirena) o de cobre (sin hormonas)</li>
+          <li>Colocado por un profesional</li>
+          <li>Reversible en cualquier momento</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="method-card">
+      <div class="method-header">
+        <div class="method-icon" style="background:#F3E8FF"><i class="ti ti-needle" style="color:#AB47BC;font-size:24px"></i></div>
+        <div><h3 style="margin:0">Inyectable anticonceptivo</h3><span class="badge badge-amber">Hormonal</span></div>
+      </div>
+      <div class="method-body">
+        <div class="eff-label"><span>Efectividad con uso correcto</span><span style="font-weight:600;color:#E91E8C">99%</span></div>
+        <div class="efectividad-bar"><div class="efectividad-fill" style="width:99%"></div></div>
+        <ul style="margin-top:0.75rem">
+          <li>Aplicación mensual o trimestral</li>
+          <li>Requiere puntualidad</li>
+          <li>Puede causar irregularidades menstruales</li>
+          <li>No protege contra ITS</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="method-card">
+      <div class="method-header">
+        <div class="method-icon" style="background:#FCE4EC"><i class="ti ti-alert-triangle" style="color:#F06292;font-size:24px"></i></div>
+        <div><h3 style="margin:0">Anticoncepción de emergencia</h3><span class="badge badge-coral">Emergencia</span></div>
+      </div>
+      <div class="method-body">
+        <div class="eff-label"><span>Efectividad (dentro de 72h)</span><span style="font-weight:600;color:#E91E8C">85-95%</span></div>
+        <div class="efectividad-bar"><div class="efectividad-fill" style="width:90%"></div></div>
+        <ul style="margin-top:0.75rem">
+          <li>Usarse solo en caso de emergencia</li>
+          <li>No reemplaza al anticonceptivo habitual</li>
+          <li>Más efectiva cuanto antes se tome</li>
+          <li>Disponible sin receta en Argentina</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="method-card">
+      <div class="method-header">
+        <div class="method-icon" style="background:#EAFAF1"><i class="ti ti-bandage" style="color:#E91E8C;font-size:24px"></i></div>
+        <div><h3 style="margin:0">Implante subdérmico</h3><span class="badge badge-green">Larga duración</span></div>
+      </div>
+      <div class="method-body">
+        <div class="eff-label"><span>Efectividad</span><span style="font-weight:600;color:#E91E8C">99.9%</span></div>
+        <div class="efectividad-bar"><div class="efectividad-fill" style="width:99.9%"></div></div>
+        <ul style="margin-top:0.75rem">
+          <li>Pequeña varilla colocada en el brazo</li>
+          <li>Dura hasta 3 años</li>
+          <li>Sin necesidad de recordar tomarlo</li>
+          <li>Reversible; colocado por un profesional</li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ====== ETS / ITS ====== -->
+<section id="tab-ets" class="tab-panel">
+  <h2 class="section-title">Infecciones de transmisión sexual</h2>
+  <p class="section-sub">Conocé las ITS más frecuentes: cómo se transmiten, sus síntomas y cómo tratarlas. El diagnóstico temprano salva vidas.</p>
+  <div class="alert alert-teal"><i class="ti ti-info-circle"></i><span>Muchas ITS no presentan síntomas. Hacerse pruebas regularmente es la única forma de saberlo con certeza.</span></div>
+  <div class="ets-grid">
+
+    <div class="ets-card">
+      <div class="ets-card-top" style="background:#FDE8F5">
+        <div style="display:flex;align-items:center;gap:0.75rem;margin-bottom:0.5rem">
+          <span class="badge badge-coral">Viral</span><span class="badge badge-teal">Tratable</span>
+        </div>
+        <h3>VIH / SIDA</h3>
+        <p style="font-size:0.83rem;color:var(--text-muted)">Virus de Inmunodeficiencia Humana</p>
+      </div>
+      <div class="ets-card-body">
+        <div class="ets-row"><span class="ets-row-label">Transmisión</span><span class="ets-row-val">Contacto sexual sin protección, sangre, lactancia</span></div>
+        <div class="ets-row"><span class="ets-row-label">Síntomas</span><span class="ets-row-val">Pueden tardar años en aparecer; fatiga, fiebre, pérdida de peso</span></div>
+        <div class="ets-row"><span class="ets-row-label">Diagnóstico</span><span class="ets-row-val">Prueba de sangre (ELISA, Western blot)</span></div>
+        <div class="ets-row"><span class="ets-row-label">Tratamiento</span><span class="ets-row-val">TAR (terapia antirretroviral) — no cura pero controla el virus</span></div>
+        <div class="ets-row"><span class="ets-row-label">Prevención</span><span class="ets-row-val">Preservativo, PrEP, no compartir jeringas</span></div>
+      </div>
+    </div>
+
+    <div class="ets-card">
+      <div class="ets-card-top" style="background:#F3E5F5">
+        <div style="display:flex;align-items:center;gap:0.75rem;margin-bottom:0.5rem">
+          <span class="badge badge-amber">Bacteriana</span><span class="badge badge-green">Curable</span>
+        </div>
+        <h3>Clamidia</h3>
+        <p style="font-size:0.83rem;color:var(--text-muted)">Chlamydia trachomatis — ITS más frecuente</p>
+      </div>
+      <div class="ets-card-body">
+        <div class="ets-row"><span class="ets-row-label">Transmisión</span><span class="ets-row-val">Contacto sexual vaginal, anal u oral</span></div>
+        <div class="ets-row"><span class="ets-row-label">Síntomas</span><span class="ets-row-val">70% sin síntomas; secreción, ardor al orinar</span></div>
+        <div class="ets-row"><span class="ets-row-label">Diagnóstico</span><span class="ets-row-val">Muestra de orina o hisopado genital</span></div>
+        <div class="ets-row"><span class="ets-row-label">Tratamiento</span><span class="ets-row-val">Antibióticos (azitromicina o doxiciclina)</span></div>
+        <div class="ets-row"><span class="ets-row-label">Prevención</span><span class="ets-row-val">Preservativo, pruebas regulares</span></div>
+      </div>
+    </div>
+
+    <div class="ets-card">
+      <div class="ets-card-top" style="background:#EDE7F6">
+        <div style="display:flex;align-items:center;gap:0.75rem;margin-bottom:0.5rem">
+          <span class="badge badge-purple">Bacteriana</span><span class="badge badge-green">Curable</span>
+        </div>
+        <h3>Gonorrea</h3>
+        <p style="font-size:0.83rem;color:var(--text-muted)">Neisseria gonorrhoeae</p>
+      </div>
+      <div class="ets-card-body">
+        <div class="ets-row"><span class="ets-row-label">Transmisión</span><span class="ets-row-val">Contacto sexual; puede afectar garganta, recto y ojos</span></div>
+        <div class="ets-row"><span class="ets-row-label">Síntomas</span><span class="ets-row-val">Secreción amarillenta o verde, dolor al orinar</span></div>
+        <div class="ets-row"><span class="ets-row-label">Diagnóstico</span><span class="ets-row-val">Muestra de secreción o cultivo</span></div>
+        <div class="ets-row"><span class="ets-row-label">Tratamiento</span><span class="ets-row-val">Antibióticos (resistencia creciente)</span></div>
+        <div class="ets-row"><span class="ets-row-label">Prevención</span><span class="ets-row-val">Preservativo, pruebas frecuentes</span></div>
+      </div>
+    </div>
+
+    <div class="ets-card">
+      <div class="ets-card-top" style="background:#F3E8FF">
+        <div style="display:flex;align-items:center;gap:0.75rem;margin-bottom:0.5rem">
+          <span class="badge badge-blue">Bacteriana</span><span class="badge badge-green">Curable</span>
+        </div>
+        <h3>Sífilis</h3>
+        <p style="font-size:0.83rem;color:var(--text-muted)">Treponema pallidum</p>
+      </div>
+      <div class="ets-card-body">
+        <div class="ets-row"><span class="ets-row-label">Transmisión</span><span class="ets-row-val">Contacto con úlceras; también de madre a hijo</span></div>
+        <div class="ets-row"><span class="ets-row-label">Síntomas</span><span class="ets-row-val">Úlceras indoloras, erupción cutánea, puede ser asintomática</span></div>
+        <div class="ets-row"><span class="ets-row-label">Diagnóstico</span><span class="ets-row-val">Análisis de sangre (VDRL, FTA-Abs)</span></div>
+        <div class="ets-row"><span class="ets-row-label">Tratamiento</span><span class="ets-row-val">Penicilina (muy efectiva)</span></div>
+        <div class="ets-row"><span class="ets-row-label">Prevención</span><span class="ets-row-val">Preservativo, control prenatal</span></div>
+      </div>
+    </div>
+
+    <div class="ets-card">
+      <div class="ets-card-top" style="background:#F3E8FF">
+        <div style="display:flex;align-items:center;gap:0.75rem;margin-bottom:0.5rem">
+          <span class="badge badge-teal">Viral</span><span class="badge badge-amber">Manejable</span>
+        </div>
+        <h3>Herpes genital</h3>
+        <p style="font-size:0.83rem;color:var(--text-muted)">Virus Herpes Simplex (VHS-2)</p>
+      </div>
+      <div class="ets-card-body">
+        <div class="ets-row"><span class="ets-row-label">Transmisión</span><span class="ets-row-val">Contacto piel a piel con zona infectada</span></div>
+        <div class="ets-row"><span class="ets-row-label">Síntomas</span><span class="ets-row-val">Ampollas, úlceras, picazón — muchos sin síntomas</span></div>
+        <div class="ets-row"><span class="ets-row-label">Diagnóstico</span><span class="ets-row-val">Examen clínico, PCR, cultivo de lesiones</span></div>
+        <div class="ets-row"><span class="ets-row-label">Tratamiento</span><span class="ets-row-val">Antivirales reducen frecuencia e intensidad</span></div>
+        <div class="ets-row"><span class="ets-row-label">Prevención</span><span class="ets-row-val">Preservativo (reduce pero no elimina el riesgo)</span></div>
+      </div>
+    </div>
+
+    <div class="ets-card">
+      <div class="ets-card-top" style="background:#FCE4EC">
+        <div style="display:flex;align-items:center;gap:0.75rem;margin-bottom:0.5rem">
+          <span class="badge badge-green">Viral</span><span class="badge badge-teal">Vacunable</span>
+        </div>
+        <h3>VPH — Virus del Papiloma Humano</h3>
+        <p style="font-size:0.83rem;color:var(--text-muted)">Más de 100 tipos; algunos causan cáncer</p>
+      </div>
+      <div class="ets-card-body">
+        <div class="ets-row"><span class="ets-row-label">Transmisión</span><span class="ets-row-val">Contacto piel a piel, sexual</span></div>
+        <div class="ets-row"><span class="ets-row-label">Síntomas</span><span class="ets-row-val">Verrugas genitales; tipos de alto riesgo sin síntomas</span></div>
+        <div class="ets-row"><span class="ets-row-label">Diagnóstico</span><span class="ets-row-val">Papanicolau, colposcopía, prueba de VPH</span></div>
+        <div class="ets-row"><span class="ets-row-label">Tratamiento</span><span class="ets-row-val">No hay cura; tratamiento de lesiones y seguimiento</span></div>
+        <div class="ets-row"><span class="ets-row-label">Prevención</span><span class="ets-row-val">Vacuna (hasta los 45 años), Pap regular</span></div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ====== MITOS Y REALIDADES ====== -->
+<section id="tab-mitos" class="tab-panel">
+  <h2 class="section-title">Mitos y Realidades</h2>
+  <p class="section-sub">La desinformación puede poner en riesgo tu salud. Hacé clic en cada afirmación para conocer la verdad.</p>
+
+  <div id="mitos-list">
+    <div class="mito-item" onclick="toggleMito(this)">
+      <div class="mito-header">
+        <h3><span class="badge badge-coral">MITO</span> "El preservativo no funciona porque tiene poros"</h3>
+        <i class="ti ti-chevron-down mito-chevron"></i>
+      </div>
+      <div class="mito-body"><p><strong>✅ REALIDAD:</strong> El látex del preservativo no tiene poros a través de los cuales puedan pasar virus o bacterias. Los estudios demuestran que, usado correctamente, tiene una efectividad del 98% contra el VIH y otras ITS. Esta afirmación es un mito peligroso que circula desde los años 80.</p></div>
+    </div>
+    <div class="mito-item" onclick="toggleMito(this)">
+      <div class="mito-header">
+        <h3><span class="badge badge-coral">MITO</span> "Puedo contagiarme una ITS solo por penetración"</h3>
+        <i class="ti ti-chevron-down mito-chevron"></i>
+      </div>
+      <div class="mito-body"><p><strong>✅ REALIDAD:</strong> Las ITS también pueden transmitirse por sexo oral, contacto piel a piel (herpes, VPH), besos (en ciertos casos) y contacto con fluidos. Es importante protegerse en todas las prácticas sexuales.</p></div>
+    </div>
+    <div class="mito-item" onclick="toggleMito(this)">
+      <div class="mito-header">
+        <h3><span class="badge badge-coral">MITO</span> "La pastilla de emergencia es un abortivo"</h3>
+        <i class="ti ti-chevron-down mito-chevron"></i>
+      </div>
+      <div class="mito-body"><p><strong>✅ REALIDAD:</strong> La anticoncepción de emergencia (levonorgestrel) actúa retrasando o inhibiendo la ovulación. No interrumpe un embarazo ya establecido. Los organismos médicos internacionales (OMS, FDA) no la clasifican como abortivo.</p></div>
+    </div>
+    <div class="mito-item" onclick="toggleMito(this)">
+      <div class="mito-header">
+        <h3><span class="badge badge-coral">MITO</span> "Si no tenés síntomas, no tenés ninguna ITS"</h3>
+        <i class="ti ti-chevron-down mito-chevron"></i>
+      </div>
+      <div class="mito-body"><p><strong>✅ REALIDAD:</strong> Muchas ITS son asintomáticas por años. La clamidia, el VIH y la sífilis pueden estar presentes sin síntomas visibles. Solo las pruebas de laboratorio pueden confirmarlo. Hacerse controles regulares es fundamental.</p></div>
+    </div>
+    <div class="mito-item" onclick="toggleMito(this)">
+      <div class="mito-header">
+        <h3><span class="badge badge-coral">MITO</span> "Las píldoras anticonceptivas engordan"</h3>
+        <i class="ti ti-chevron-down mito-chevron"></i>
+      </div>
+      <div class="mito-body"><p><strong>✅ REALIDAD:</strong> Los estudios clínicos no han demostrado una relación causal entre el uso de anticonceptivos hormonales modernos y el aumento de peso. Pueden existir cambios temporales por retención de líquidos, pero no hay evidencia de aumento de masa grasa.</p></div>
+    </div>
+    <div class="mito-item" onclick="toggleMito(this)">
+      <div class="mito-header">
+        <h3><span class="badge badge-coral">MITO</span> "El VIH solo afecta a personas homosexuales o a quienes consumen drogas"</h3>
+        <i class="ti ti-chevron-down mito-chevron"></i>
+      </div>
+      <div class="mito-body"><p><strong>✅ REALIDAD:</strong> El VIH puede afectar a cualquier persona sexualmente activa independientemente de su orientación sexual, género, edad o clase social. Estigmatizar grupos retrasa el diagnóstico y el tratamiento.</p></div>
+    </div>
+    <div class="mito-item" onclick="toggleMito(this)">
+      <div class="mito-header">
+        <h3><span class="badge badge-coral">MITO</span> "El DIU es solo para mujeres que ya tuvieron hijos"</h3>
+        <i class="ti ti-chevron-down mito-chevron"></i>
+      </div>
+      <div class="mito-body"><p><strong>✅ REALIDAD:</strong> El DIU puede ser utilizado por personas que nunca han tenido hijos. Las guías actuales de ginecología avalan su uso en nulíparas. Es un método seguro y muy efectivo para personas de cualquier etapa reproductiva.</p></div>
+    </div>
+    <div class="mito-item" onclick="toggleMito(this)">
+      <div class="mito-header">
+        <h3><span class="badge badge-coral">MITO</span> "La primera vez no se puede quedar embarazada"</h3>
+        <i class="ti ti-chevron-down mito-chevron"></i>
+      </div>
+      <div class="mito-body"><p><strong>✅ REALIDAD:</strong> El embarazo puede ocurrir en cualquier relación sexual donde haya penetración vaginal, incluyendo la primera vez. El uso de anticoncepción es fundamental desde el inicio de la vida sexual.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ====== QUIZ ====== -->
+<section id="tab-quiz" class="tab-panel">
+  <h2 class="section-title">Quiz de salud sexual</h2>
+  <p class="section-sub">Ponés a prueba tus conocimientos con este cuestionario interactivo. Al final verás tu puntaje y las explicaciones correctas.</p>
+  <div id="quiz-container">
+    <div class="quiz-progress"><div class="quiz-progress-fill" id="quiz-progress-fill" style="width:0%"></div></div>
+    <div id="quiz-content"></div>
+  </div>
+</section>
+
+<!-- ====== CENTROS ====== -->
+<section id="tab-centros" class="tab-panel">
+  <h2 class="section-title">Centros de salud y pruebas de ITS</h2>
+  <p class="section-sub">Encontrá dónde realizarte pruebas, consultas ginecológicas, urológicas y de salud sexual en tu zona.</p>
+
+  <div class="search-bar">
+    <input type="text" id="centros-search" placeholder="🔍  Buscar por nombre o servicio..." oninput="filtrarCentros()">
+    <select onchange="filtrarCentros()" id="centros-tipo">
+      <option value="">Todos los tipos</option>
+      <option value="hospital">Hospital público</option>
+      <option value="cesac">CESAC / Centro de salud</option>
+      <option value="privado">Privado / Prepaga</option>
+      <option value="ong">ONG / Gratuito</option>
+    </select>
+  </div>
+
+  <div class="alert alert-teal"><i class="ti ti-map-pin"></i><span>En Argentina, las pruebas de VIH son <strong>gratuitas y confidenciales</strong> en todos los hospitales públicos. No se requiere derivación médica.</span></div>
+
+  <div id="centros-list">
+    <div class="centro-card" data-tipo="hospital" data-text="hospital muñiz infecciosas vih its">
+      <div class="centro-icon"><i class="ti ti-building-hospital"></i></div>
+      <div class="centro-info">
+        <h4>Hospital de Infecciosas Francisco Javier Muñiz</h4>
+        <p><i class="ti ti-map-pin" style="font-size:13px"></i> Uspallata 2272, CABA &nbsp;|&nbsp; <i class="ti ti-clock" style="font-size:13px"></i> Lun–Vie 8:00–18:00</p>
+        <div class="centro-tags">
+          <span class="badge badge-coral">VIH/SIDA</span>
+          <span class="badge badge-blue">ITS</span>
+          <span class="badge badge-green">Gratuito</span>
+        </div>
+      </div>
+      <div class="centro-acciones"><a href="https://maps.google.com/?q=Hospital+Muñiz+Buenos+Aires" target="_blank" class="btn btn-teal btn-sm"><i class="ti ti-map"></i> Ver mapa</a></div>
+    </div>
+
+    <div class="centro-card" data-tipo="hospital" data-text="hospital ramos mejía anticoncepción ginecología">
+      <div class="centro-icon"><i class="ti ti-building-hospital"></i></div>
+      <div class="centro-info">
+        <h4>Hospital Ramos Mejía — Servicio de Ginecología</h4>
+        <p><i class="ti ti-map-pin" style="font-size:13px"></i> General Urquiza 609, CABA &nbsp;|&nbsp; <i class="ti ti-clock" style="font-size:13px"></i> Lun–Vie 7:00–17:00</p>
+        <div class="centro-tags">
+          <span class="badge badge-purple">Ginecología</span>
+          <span class="badge badge-teal">Anticoncepción</span>
+          <span class="badge badge-green">Gratuito</span>
+        </div>
+      </div>
+      <div class="centro-acciones"><a href="https://maps.google.com/?q=Hospital+Ramos+Mejia+Buenos+Aires" target="_blank" class="btn btn-teal btn-sm"><i class="ti ti-map"></i> Ver mapa</a></div>
+    </div>
+
+    <div class="centro-card" data-tipo="cesac" data-text="cesac centro de salud barrial consulta ITS">
+      <div class="centro-icon"><i class="ti ti-heart-plus"></i></div>
+      <div class="centro-info">
+        <h4>CESAC N°35 — Salud Sexual y Reproductiva</h4>
+        <p><i class="ti ti-map-pin" style="font-size:13px"></i> Av. Directorio 4360, CABA &nbsp;|&nbsp; <i class="ti ti-clock" style="font-size:13px"></i> Lun–Vie 8:00–19:00</p>
+        <div class="centro-tags">
+          <span class="badge badge-teal">Salud Sexual</span>
+          <span class="badge badge-blue">Anticoncepción</span>
+          <span class="badge badge-green">Gratuito</span>
+        </div>
+      </div>
+      <div class="centro-acciones"><a href="https://maps.google.com/?q=CESAC+35+Buenos+Aires" target="_blank" class="btn btn-teal btn-sm"><i class="ti ti-map"></i> Ver mapa</a></div>
+    </div>
+
+    <div class="centro-card" data-tipo="ong" data-text="fundacion huesped vih prueba gratuita ong">
+      <div class="centro-icon"><i class="ti ti-users"></i></div>
+      <div class="centro-info">
+        <h4>Fundación Huésped — Consulta y Testeo</h4>
+        <p><i class="ti ti-map-pin" style="font-size:13px"></i> Av. Forest 562, CABA &nbsp;|&nbsp; <i class="ti ti-phone" style="font-size:13px"></i> (011) 4772-7715</p>
+        <div class="centro-tags">
+          <span class="badge badge-coral">VIH</span>
+          <span class="badge badge-blue">Hepatitis</span>
+          <span class="badge badge-green">Gratuito</span>
+          <span class="badge badge-purple">LGBTQ+ friendly</span>
+        </div>
+      </div>
+      <div class="centro-acciones"><a href="https://www.huesped.org.ar" target="_blank" class="btn btn-teal btn-sm"><i class="ti ti-external-link"></i> Sitio web</a></div>
+    </div>
+
+    <div class="centro-card" data-tipo="ong" data-text="defensa mujer diversidad sexual derechos ong">
+      <div class="centro-icon"><i class="ti ti-users"></i></div>
+      <div class="centro-info">
+        <h4>Centro de Salud NEXO LGBT — Atención integral</h4>
+        <p><i class="ti ti-map-pin" style="font-size:13px"></i> Av. de Mayo 1270 Piso 3, CABA &nbsp;|&nbsp; <i class="ti ti-clock" style="font-size:13px"></i> Mar–Jue 14:00–19:00</p>
+        <div class="centro-tags">
+          <span class="badge badge-purple">LGBTQ+</span>
+          <span class="badge badge-blue">ITS</span>
+          <span class="badge badge-coral">VIH</span>
+          <span class="badge badge-green">Gratuito</span>
+        </div>
+      </div>
+      <div class="centro-acciones"><a href="https://maps.google.com/?q=NEXO+LGBT+Buenos+Aires" target="_blank" class="btn btn-teal btn-sm"><i class="ti ti-map"></i> Ver mapa</a></div>
+    </div>
+
+    <div class="centro-card" data-tipo="hospital" data-text="hospital de clinicas urólogo ginecólogo ITS">
+      <div class="centro-icon"><i class="ti ti-building-hospital"></i></div>
+      <div class="centro-info">
+        <h4>Hospital de Clínicas — Urología y Ginecología</h4>
+        <p><i class="ti ti-map-pin" style="font-size:13px"></i> Av. Córdoba 2351, CABA &nbsp;|&nbsp; <i class="ti ti-clock" style="font-size:13px"></i> Lun–Vie 7:00–16:00</p>
+        <div class="centro-tags">
+          <span class="badge badge-blue">Urología</span>
+          <span class="badge badge-purple">Ginecología</span>
+          <span class="badge badge-green">Gratuito</span>
+        </div>
+      </div>
+      <div class="centro-acciones"><a href="https://maps.google.com/?q=Hospital+de+Clínicas+UBA+Buenos+Aires" target="_blank" class="btn btn-teal btn-sm"><i class="ti ti-map"></i> Ver mapa</a></div>
+    </div>
+  </div>
+
+  <div style="margin-top:1.5rem;padding:1rem;background:#F3E8FF;border-radius:var(--radius-sm);font-size:0.87rem;color:#AB47BC">
+    <strong><i class="ti ti-phone"></i> Líneas de ayuda nacionales:</strong><br>
+    • <strong>0800-3333-444</strong> — Línea SIDA (gratuita, 24hs)<br>
+    • <strong>0800-222-3444</strong> — Línea Salud Sexual y Reproductiva<br>
+    • <strong>PAMI Salud Sexual</strong> — Para afiliados mayores: 0800-222-7264
+  </div>
+</section>
+
+<!-- ====== ESTADÍSTICAS ====== -->
+<section id="tab-estadisticas" class="tab-panel">
+  <h2 class="section-title">Estadísticas e infografías</h2>
+  <p class="section-sub">Datos actualizados sobre salud sexual en Argentina y el mundo para entender la magnitud del problema.</p>
+
+  <div class="stat-grid">
+    <div class="stat-card"><div class="stat-number" style="color:#F06292">~140K</div><div class="stat-label">personas viven con VIH en Argentina (INDEC/Ministerio Salud 2023)</div></div>
+    <div class="stat-card"><div class="stat-number" style="color:#AB47BC">1 de 5</div><div class="stat-label">personas con VIH en Argentina desconoce su diagnóstico</div></div>
+    <div class="stat-card"><div class="stat-number" style="color:#AB47BC">374M</div><div class="stat-label">nuevas infecciones por ITS curables cada año (OMS, global)</div></div>
+    <div class="stat-card"><div class="stat-number" style="color:#E91E8C">98%</div><div class="stat-label">de efectividad del preservativo usado correctamente</div></div>
+  </div>
+
+  <div class="infographic">
+    <h3><i class="ti ti-chart-bar" style="color:#AB47BC"></i> ITS más frecuentes diagnosticadas (Argentina, estimación relativa)</h3>
+    <div class="bar-row"><span class="bar-label">VPH</span><div class="bar-wrap"><div class="bar-fill" style="width:80%;background:#F8EAF6">80%</div></div></div>
+    <div class="bar-row"><span class="bar-label">Clamidia</span><div class="bar-wrap"><div class="bar-fill" style="width:55%;background:#6A1B9A">55%</div></div></div>
+    <div class="bar-row"><span class="bar-label">Herpes VHS</span><div class="bar-wrap"><div class="bar-fill" style="width:40%;background:#C2185B">40%</div></div></div>
+    <div class="bar-row"><span class="bar-label">Gonorrea</span><div class="bar-wrap"><div class="bar-fill" style="width:25%;background:#CE93D8">25%</div></div></div>
+    <div class="bar-row"><span class="bar-label">Sífilis</span><div class="bar-wrap"><div class="bar-fill" style="width:18%;background:#F48FB1">18%</div></div></div>
+    <div class="bar-row"><span class="bar-label">VIH</span><div class="bar-wrap"><div class="bar-fill" style="width:12%;background:#F8EAF6">12%</div></div></div>
+    <p style="font-size:0.75rem;color:var(--text-muted);margin-top:1rem">*Datos estimativos basados en reportes del Ministerio de Salud y OPS. No representan prevalencia exacta.</p>
+  </div>
+
+  <div class="infographic">
+    <h3><i class="ti ti-shield" style="color:#AB47BC"></i> Uso de métodos anticonceptivos en jóvenes (15–24 años, Argentina)</h3>
+    <div class="card-grid" style="grid-template-columns:repeat(auto-fit,minmax(200px,1fr));margin-bottom:0">
+      <div style="text-align:center;padding:1rem;background:#F3E8FF;border-radius:var(--radius-sm)">
+        <div style="font-size:2rem;font-weight:700;color:var(--teal-mid)">63%</div>
+        <div style="font-size:0.82rem;color:var(--text-muted)">Usa preservativo en la primera relación</div>
+      </div>
+      <div style="text-align:center;padding:1rem;background:#EDE7F6;border-radius:var(--radius-sm)">
+        <div style="font-size:2rem;font-weight:700;color:var(--purple)">41%</div>
+        <div style="font-size:0.82rem;color:var(--text-muted)">Usa anticoncepción hormonal</div>
+      </div>
+      <div style="text-align:center;padding:1rem;background:#FDE8F5;border-radius:var(--radius-sm)">
+        <div style="font-size:2rem;font-weight:700;color:var(--coral)">22%</div>
+        <div style="font-size:0.82rem;color:var(--text-muted)">No usa ningún método en su última relación</div>
+      </div>
+    </div>
+    <p style="font-size:0.75rem;color:var(--text-muted);margin-top:1rem">*Fuente: ENSSyR — Encuesta Nacional sobre Salud Sexual y Reproductiva, INDEC.</p>
+  </div>
+
+  <div class="infographic">
+    <h3><i class="ti ti-vaccine" style="color:#AB47BC"></i> Vacunación contra VPH en Argentina</h3>
+    <div style="display:flex;align-items:center;gap:1.5rem;flex-wrap:wrap">
+      <div style="flex:1;min-width:200px">
+        <p style="font-size:0.88rem;color:var(--text-muted);margin-bottom:1rem">Argentina incluye la vacuna contra el VPH en el <strong>Calendario Nacional de Vacunación</strong> desde 2011, inicialmente para niñas y desde 2017 también para varones.</p>
+        <ul style="font-size:0.85rem;color:var(--text-muted);padding-left:1.2rem">
+          <li>Edad recomendada: 11 años (dosis óptima)</li>
+          <li>Disponible gratuitamente hasta los 26 años</li>
+          <li>Reduce hasta 90% el riesgo de cáncer cervical</li>
+        </ul>
+      </div>
+      <div style="text-align:center;padding:1.5rem;background:#FCE4EC;border-radius:var(--radius);min-width:150px">
+        <div style="font-size:2.8rem;font-weight:700;color:var(--green)">90%</div>
+        <div style="font-size:0.82rem;color:#E91E8C">Reducción del riesgo<br>de cáncer cervical</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ====== RECURSOS ====== -->
+<section id="tab-recursos" class="tab-panel">
+  <h2 class="section-title">Guías y recursos</h2>
+  <p class="section-sub">Material educativo verificado para descargar, compartir y aprender. Todos los recursos son de fuentes oficiales o académicas reconocidas.</p>
+
+  <div class="card" style="margin-bottom:1.5rem">
+    <h3 style="font-size:1rem;font-weight:600;margin-bottom:1rem;color:var(--teal-mid)"><i class="ti ti-file-description" style="color:#AB47BC"></i> Guías oficiales descargables</h3>
+    <div class="recurso-card">
+      <div class="recurso-icon" style="background:#FDE8F5;color:var(--coral)"><i class="ti ti-file-text"></i></div>
+      <div class="recurso-info"><h4>Guía nacional de VIH, ITS y hepatitis virales</h4><p>Ministerio de Salud de Argentina — Actualización 2023</p></div>
+      <a href="https://www.argentina.gob.ar/salud/vih-sida" target="_blank" class="btn btn-outline btn-sm"><i class="ti ti-external-link"></i> Ver</a>
+    </div>
+    <div class="recurso-card">
+      <div class="recurso-icon" style="background:#F3E8FF;color:var(--blue)"><i class="ti ti-file-text"></i></div>
+      <div class="recurso-info"><h4>Anticoncepción — Guía práctica para equipos de salud</h4><p>Programa Nacional de Salud Sexual y Procreación Responsable</p></div>
+      <a href="https://www.argentina.gob.ar/salud/saludsexual" target="_blank" class="btn btn-outline btn-sm"><i class="ti ti-external-link"></i> Ver</a>
+    </div>
+    <div class="recurso-card">
+      <div class="recurso-icon" style="background:#F3E8FF;color:var(--teal-mid)"><i class="ti ti-file-text"></i></div>
+      <div class="recurso-info"><h4>OPS — Salud sexual y reproductiva: datos y cifras</h4><p>Organización Panamericana de la Salud — Informe regional</p></div>
+      <a href="https://www.paho.org/es/temas/salud-sexual-reproductiva" target="_blank" class="btn btn-outline btn-sm"><i class="ti ti-external-link"></i> Ver</a>
+    </div>
+    <div class="recurso-card">
+      <div class="recurso-icon" style="background:#FCE4EC;color:#F06292"><i class="ti ti-file-text"></i></div>
+      <div class="recurso-info"><h4>Manual de educación sexual integral (ESI)</h4><p>Programa Nacional ESI — Ministerio de Educación Argentina</p></div>
+      <a href="https://www.argentina.gob.ar/educacion/esi" target="_blank" class="btn btn-outline btn-sm"><i class="ti ti-external-link"></i> Ver</a>
+    </div>
+  </div>
+
+  <div class="card">
+    <h3 style="font-size:1rem;font-weight:600;margin-bottom:1rem;color:var(--teal-mid)"><i class="ti ti-world" style="color:#AB47BC"></i> Sitios y organizaciones de referencia</h3>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:1rem">
+      <div class="info-card">
+        <div class="card-icon" style="background:#F3E8FF;color:var(--teal-mid)"><i class="ti ti-world" style="color:#AB47BC"></i></div>
+        <h3>OMS — Salud Sexual</h3>
+        <p>Datos globales, publicaciones técnicas y recomendaciones de la Organización Mundial de la Salud sobre salud sexual.</p>
+        <a href="https://www.who.int/es/health-topics/sexual-health" target="_blank" style="color:#AB47BC;font-size:0.85rem;font-weight:600">who.int →</a>
+      </div>
+      <div class="info-card">
+        <div class="card-icon" style="background:#FDE8F5;color:var(--coral)"><i class="ti ti-heart"></i></div>
+        <h3>Fundación Huésped</h3>
+        <p>ONG argentina especializada en VIH, hepatitis y derechos de las personas con enfermedades infecciosas.</p>
+        <a href="https://www.huesped.org.ar" target="_blank" style="color:#AB47BC;font-size:0.85rem;font-weight:600">huesped.org.ar →</a>
+      </div>
+      <div class="info-card">
+        <div class="card-icon" style="background:#EDE7F6;color:var(--purple)"><i class="ti ti-users"></i></div>
+        <h3>NEXO Asociación Civil</h3>
+        <p>Organización de salud LGBT+ que ofrece testeos, atención integral y educación sexual en Argentina.</p>
+        <a href="https://www.nexoasociacion.org.ar" target="_blank" style="color:#AB47BC;font-size:0.85rem;font-weight:600">nexoasociacion.org.ar →</a>
+      </div>
+      <div class="info-card">
+        <div class="card-icon" style="background:#F3E8FF;color:var(--blue)"><i class="ti ti-stethoscope"></i></div>
+        <h3>UNFPA Argentina</h3>
+        <p>Fondo de Población de las Naciones Unidas — Derechos sexuales y reproductivos en América Latina.</p>
+        <a href="https://argentina.unfpa.org" target="_blank" style="color:#AB47BC;font-size:0.85rem;font-weight:600">argentina.unfpa.org →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ====== FAQ ====== -->
+<section id="tab-faq" class="tab-panel">
+  <h2 class="section-title">Preguntas frecuentes</h2>
+  <p class="section-sub">Respondemos las dudas más comunes sobre salud sexual, anticonceptivos e ITS.</p>
+
+  <div id="faq-list">
+    <div class="faq-item" onclick="toggleFaq(this)">
+      <div class="faq-question">¿Con qué frecuencia debo hacerme pruebas de ITS? <i class="ti ti-chevron-down faq-chev"></i></div>
+      <div class="faq-answer">Depende de tu actividad sexual y factores de riesgo. En general, si tenés vida sexual activa con múltiples parejas, se recomienda hacerse pruebas cada 3–6 meses. Si tenés una pareja estable y ambos se han hecho pruebas recientemente, una vez al año puede ser suficiente. Consultá con un profesional para una evaluación personalizada.</div>
+    </div>
+    <div class="faq-item" onclick="toggleFaq(this)">
+      <div class="faq-question">¿El preservativo femenino es igual de efectivo que el masculino? <i class="ti ti-chevron-down faq-chev"></i></div>
+      <div class="faq-answer">El preservativo femenino (interno) tiene una efectividad de aproximadamente 79–95% con uso típico. Cuando se usa correctamente y consistentemente, puede ser muy efectivo. Tiene la ventaja de que puede colocarse antes de la relación y está fabricado de poliuretano, lo que lo hace apto para personas alérgicas al látex.</div>
+    </div>
+    <div class="faq-item" onclick="toggleFaq(this)">
+      <div class="faq-question">¿Puedo usar dos preservativos a la vez para mayor protección? <i class="ti ti-chevron-down faq-chev"></i></div>
+      <div class="faq-answer">No. Usar dos preservativos al mismo tiempo (doble condón) aumenta la fricción entre ellos, lo cual puede causar roturas. Para mayor seguridad, lo ideal es usar un solo preservativo de buena calidad correctamente y combinarlo con otro método anticonceptivo si querés mayor protección contra el embarazo.</div>
+    </div>
+    <div class="faq-item" onclick="toggleFaq(this)">
+      <div class="faq-question">¿Qué es la PrEP y quién puede usarla? <i class="ti ti-chevron-down faq-chev"></i></div>
+      <div class="faq-answer">La PrEP (Profilaxis Pre-Exposición) es un medicamento que toman personas VIH negativas para prevenir la infección por VIH. Es altamente efectiva (más del 99%) cuando se toma correctamente. En Argentina está disponible de forma gratuita a través del sistema de salud pública para personas en situación de riesgo. Requiere prescripción médica y seguimiento regular.</div>
+    </div>
+    <div class="faq-item" onclick="toggleFaq(this)">
+      <div class="faq-question">¿Se puede tener sexo oral sin riesgo de ITS? <i class="ti ti-chevron-down faq-chev"></i></div>
+      <div class="faq-answer">El sexo oral tiene menor riesgo que el penetrativo, pero no es completamente seguro. Herpes, gonorrea, sífilis y VPH pueden transmitirse por sexo oral. El riesgo de VIH por sexo oral es muy bajo pero no nulo. Para reducir el riesgo, se pueden usar preservativos o barreras de látex (dental dams) durante el sexo oral.</div>
+    </div>
+    <div class="faq-item" onclick="toggleFaq(this)">
+      <div class="faq-question">¿La menstruación protege de un embarazo? <i class="ti ti-chevron-down faq-chev"></i></div>
+      <div class="faq-answer">No con certeza. Aunque la probabilidad es menor durante la menstruación, no es imposible quedar embarazada. Los ciclos irregulares y la supervivencia de espermatozoides por varios días hacen que las relaciones durante la menstruación puedan resultar en embarazo. Siempre es recomendable usar un método anticonceptivo.</div>
+    </div>
+    <div class="faq-item" onclick="toggleFaq(this)">
+      <div class="faq-question">¿Es normal tener dudas o vergüenza al hablar con el médico sobre sexualidad? <i class="ti ti-chevron-down faq-chev"></i></div>
+      <div class="faq-answer">Totalmente normal, y muy común. Sin embargo, los profesionales de salud están capacitados para hablar de estos temas sin juzgarte. Recordá que la información que compartas con tu médico es confidencial. Hablar abiertamente te permite recibir la mejor atención posible. Si sentís que tu médico no te trata con respeto, tenés derecho a consultar con otro profesional.</div>
+    </div>
+    <div class="faq-item" onclick="toggleFaq(this)">
+      <div class="faq-question">¿Dónde puedo hacer una prueba de VIH de forma gratuita en Argentina? <i class="ti ti-chevron-down faq-chev"></i></div>
+      <div class="faq-answer">En cualquier hospital público del país, de forma gratuita y confidencial, sin necesidad de derivación médica. También en CESAC (centros de atención primaria), centros comunitarios y ONGs como Fundación Huésped o NEXO. Llamando al 0800-3333-444 (línea gratuita del Ministerio de Salud) podés encontrar el centro más cercano a tu domicilio.</div>
+    </div>
+  </div>
+
+  <div class="chat-box">
+    <h3><i class="ti ti-message-question" style="color:#AB47BC"></i> ¿Tenés otra pregunta?</h3>
+    <p>Aunque no podemos responder consultas médicas personales, podemos orientarte sobre recursos y profesionales. Para consultas médicas, contactá un centro de salud.</p>
+    <div class="chat-input-row">
+      <input type="text" id="chat-input" placeholder="Escribí tu pregunta aquí..." onkeypress="enviarPregunta(event)">
+      <button class="btn btn-teal" onclick="enviarPregunta({key:'Enter'})"><i class="ti ti-send"></i> Enviar</button>
+    </div>
+    <div id="chat-respuesta" style="margin-top:1rem;display:none;padding:1rem;background:#F3E8FF;border-radius:var(--radius-sm);font-size:0.88rem;color:var(--teal-mid)"></div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <p><strong>SaludSexual</strong> — Sitio educativo sin fines de lucro</p>
+  <p style="margin-top:0.5rem">La información aquí presentada tiene fines exclusivamente educativos y no reemplaza la consulta médica profesional.</p>
+  <p style="margin-top:0.75rem">Fuentes: <a href="https://www.who.int">OMS</a> · <a href="https://www.paho.org">OPS</a> · <a href="https://www.argentina.gob.ar/salud">Ministerio de Salud de Argentina</a> · <a href="https://www.huesped.org.ar">Fundación Huésped</a></p>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
